@@ -80,6 +80,7 @@ model.fit(
     epochs= 5
 )
 
+#import fomarted and cleaned testing set
 df_test = pd.read_csv("testset.csv")
 x_test = df.iloc[:,[0,75]]
 y_test = df.iloc[:,[75]]
