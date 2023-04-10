@@ -80,6 +80,9 @@ model.fit(
     epochs= 5
 )
 
+df_test = pd.read_csv("testset.csv")
+x_test = df.iloc[:,[0,75]]
+y_test = df.iloc[:,[75]]
 results = model.evaluate(x_test, y_test, batch_size=128)
 print("test loss, test acc:", results)
 
